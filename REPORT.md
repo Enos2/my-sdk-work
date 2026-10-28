@@ -73,7 +73,7 @@ On Windows, `npm test` in `myapi-sdk/ts` runs `rm -rf` as part of its build step
 
 I used AI assistance (Claude) after my first submission to work out why no SDK code had been generated, to add the TypeScript target and regenerate the SDK, and to help rewrite the README and this report. I ran the live check and the full test suite myself on my own machine and pushed the result.
 
-My human time on the SDK work was approximately [X] minutes.
+My human time on the SDK work was approximately NN minutes.
 
 ## 8. Conclusion
 
