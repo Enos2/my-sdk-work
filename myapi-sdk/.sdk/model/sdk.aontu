@@ -1,4 +1,3 @@
-
 # Model definitions.
 @"@voxgig/apidef/model/apidef.aontu"
 @"@voxgig/sdkgen/model/sdkgen.aontu"
@@ -10,7 +9,7 @@ def: 'api.yml'
 
 
 # API Information
-@"api/api-info.aontu"
+@"./api/api-info.aontu"
 
 
 # SDK Configuration.
@@ -18,22 +17,22 @@ def: 'api.yml'
 
 
 # SDK Entities
-@"entity/entity-index.aontu"
+@"./entity/entity-index.aontu"
 
 
 # SDK Features.
-@"feature/feature-index.aontu"
+@"./feature/feature-index.aontu"
 
 
 # SDK Targets.
-@"target/target-index.aontu"
+@"./target/target-index.aontu"
 
 
 # Operation workflows.
-@"flow/flow-index.aontu"
+@"./flow/flow-index.aontu"
 
 
 @"./project.aontu"
 
 # Documentation editions. Settings belong in project.aontu.
-@"edition/edition-index.aontu"
+@"./edition/edition-index.aontu"

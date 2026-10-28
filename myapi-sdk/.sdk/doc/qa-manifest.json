@@ -1,0 +1,13 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "> All the Pokémon data you&#39;ll ever need in one place, easily accessible through a modern free open-source RESTful API.\n>\n> ## What is this?\n>\n> This is a full RESTful API linked to an extensive database detailing everything about the Pokémon main game series.\n>\n> We&#39;ve covered everything from Pokémon to Berry Flavors.\n>\n> ## Where do I start?\n>\n> We have awesome [documentation](https://pokeapi.co/docs/v2) on how to use this API. It takes minutes to get started.\n>\n> This API will always be publicly available and will never require any extensive setup process to consume.\n>\n> Created by [**Paul Hallett**](https://github.com/phalt) and other [**PokéAPI contributors**](https://github.com/PokeAPI/pokeapi#contributing) around the world. Pokémon and Pokémon character names are trademarks of Nintendo.",
+      "Where the value comes from: &#39;pokemon&#39; for data stored on the Pokemon (for example EC, PID), &#39;player-input&#39; for an action taken by the player while evolving (for example `SPIN_DIR`, `SPIN_SEC`)"
+    ]
+  }
+}
