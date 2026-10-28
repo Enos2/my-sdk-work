@@ -4,7 +4,7 @@
 
 
 name: 'myapi'
-origin: 'voxgig-sdk'
+origin: 'enos2'
 def: 'api.yml'
 
 

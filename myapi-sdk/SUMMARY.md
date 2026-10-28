@@ -20,7 +20,7 @@
 
 This guide introduces the API, the client libraries, and the companion tools in this repository. Start with the API capabilities, choose a client for your application, and use the linked reference when you need exact request and response details.
 
-The selected API surface contains 50 entities and 102 HTTP routes. No SDK targets are selected.
+The selected API surface contains 50 entities and 102 HTTP routes. There are 1 SDK targets.
 
 An entity groups related API operations. An operation can have several routes with different inputs or authentication requirements. The SDK exposes the entity and its operations using the conventions of the selected language.
 
@@ -364,6 +364,20 @@ For an SDK call, install or build the chosen client, create a client instance wi
 ## Choose an SDK
 
 Choose the language already used by your application or service. The clients represent the same API model, while package setup, naming, and return types follow each language. Check the selected client’s reference and tests before integrating it into an existing application.
+
+| Client | Repository directory | Distribution |
+| --- | --- | --- |
+| TypeScript | `ts/` | Build from source |
+
+Build-from-source entries are not marked as published in the project model. Follow the build instructions in that target’s README, then consume the resulting package using your language’s local dependency mechanism. Published entries give the installation command recorded for that client.
+
+## Operational features
+
+Features supply behaviour around API calls, such as request handling, diagnostics, or local testing. Inclusion in this project does not mean a feature is enabled at runtime. Check the selected SDK’s supported features and configuration defaults, then enable the behaviour your application needs.
+
+- `test`: In-memory mock transport for testing without a live server
+
+Start with the default client configuration. Add request limits and diagnostics as needed, test error paths, and review retry behaviour before using operations that change data. A retry can repeat an operation unless the API provides a suitable guarantee.
 
 ## Continue with the documentation
 

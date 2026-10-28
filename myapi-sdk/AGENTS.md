@@ -12,6 +12,18 @@ There are companion guides deeper in the tree: one per language
 
 ## Project map
 
+**Targets** (1):
+
+| Target | Directory | Build guide |
+| --- | --- | --- |
+| `ts` | `ts/` | [`ts/AGENTS.md`](./ts/AGENTS.md) |
+
+**Features** (1): `test`.
+
+Each feature is generated into every SDK target — as a directory
+`<lang>/src/feature/<name>/` (ts/js) or a flat file in the `<lang>/feature/`
+package (other languages). Each target's guide documents its features.
+
 **Entities** (50): `Ability`, `Berry`, `BerryFirmness`, `BerryFlavor`, `Characteristic`, `ContestEffect`, `ContestType`, `Currency`, `EggGroup`, `EncounterCondition`, `EncounterConditionValue`, `EncounterMethod`, `EvolutionChain`, `EvolutionTrigger`, `EvolutionVariable`, `Gender`, `Generation`, `GrowthRate`, `Item`, `ItemAttribute`, `ItemCategory`, `ItemFlingEffect`, `ItemPocket`, `Language`, `Location`, `LocationArea`, `Machine`, `Move`, `MoveBattleStyle`, `MoveDamageClass`, `MoveLearnMethod`, `MoveTarget`, `Nature`, `PalParkArea`, `PokeathlonStat`, `Pokedex`, `Pokemon`, `PokemonColor`, `PokemonEncounter`, `PokemonForm`, `PokemonHabitat`, `PokemonShape`, `PokemonSpecies`, `Region`, `Stat`, `SuperContestEffect`, `Type`, `Utility`, `Version`, `VersionGroup`.
 
 ## Generating and updating the SDK
