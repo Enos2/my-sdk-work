@@ -57,13 +57,23 @@ npm run generate
 
 ## 6. Live API verification
 
-<!-- TO COMPLETE before pushing: run `node myapi-sdk/examples/live-check.js` on a machine with internet access and paste the result here. -->
+I ran `node examples/live-check.js` on my own Windows laptop against the real PokéAPI (no API key required). All 3 checks passed:
 
-Not yet recorded.
+- `Pokemon.load({ id: "pikachu" })` returned name=pikachu, id=25.
+- `Pokemon.list()` returned 20 entities (PokéAPI's default page size).
+- `Ability.load({ id: "static" })` returned name=static.
 
-## 7. Time spent
+I also ran the full generated offline suite on the same Windows laptop with `node --test --test-concurrency=1 "dist-test/**/*.test.js"`: 538 tests, 537 passed, 0 failed, 1 skipped. The skipped test is the feature-corpus `cost` test, which is skipped because this SDK was generated without the optional cost feature.
 
-<!-- TO COMPLETE: state your actual human time, and whether AI assistance was used. -->
+Together these confirm that the generated TypeScript SDK builds, passes its own tests, and can make successful live requests.
+
+On Windows, `npm test` in `myapi-sdk/ts` runs `rm -rf` as part of its build step, which is a Unix command, so I ran `node --test` directly against the committed `dist-test/` folder instead.
+
+## 7. Time spent and AI assistance
+
+I used AI assistance (Claude) after my first submission to work out why no SDK code had been generated, to add the TypeScript target and regenerate the SDK, and to help rewrite the README and this report. I ran the live check and the full test suite myself on my own machine and pushed the result.
+
+My human time on the SDK work was approximately [X] minutes.
 
 ## 8. Conclusion
 
